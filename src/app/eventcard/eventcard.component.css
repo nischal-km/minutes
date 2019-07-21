@@ -1,0 +1,29 @@
+.example-card {
+  max-width: 36vw;
+}
+  
+.card-image {
+  width:35vw;
+  height:35vh;
+  margin-left: 5px;
+}
+
+.card-actions{
+  display:flex;
+  justify-content: center;
+}
+
+.card-main{
+  display: flex;
+  justify-content: center;
+}
+
+.default-style{
+  color:white;
+}
+
+.default-style-header{
+  color:white;
+  font-size: 2rem;
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+<span class="default-style-header">Minutes&nbsp;</span>
+<span class="default-style">(Cover important things within minutes)</span>
+<p></p>
+<div class="card-main">
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>{{dataToShow.author}}</mat-card-title>
+        <mat-card-subtitle>{{dataToShow.publishedAt | date:'dd-MM-yyy'}}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="card-image" mat-card-image src="{{dataToShow.urlToImage}}">
+    <mat-card-content>
+        <a href="{{dataToShow.url}}" target="_blank"><h3>{{dataToShow.title}}</h3></a>
+        <p>
+            {{dataToShow.description}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions class="card-actions">
+        <button mat-icon-button color="primary" (click)="previousArticle()"><mat-icon>navigate_before</mat-icon></button>
+        <button mat-icon-button color="primary" (click)="nextArticle()"><mat-icon>navigate_next</mat-icon></button>
+    </mat-card-actions>
+</mat-card>
+</div>
